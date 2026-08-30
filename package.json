@@ -1,0 +1,28 @@
+{
+  "name": "@withverifa/mcp-server",
+  "version": "0.1.0",
+  "description": "Run Verifa identity verification from any MCP client. Local stdio server that proxies to the hosted Verifa MCP endpoint with your API key.",
+  "license": "MIT",
+  "type": "module",
+  "bin": { "verifa-mcp-server": "dist/index.js" },
+  "main": "dist/index.js",
+  "files": ["dist", "README.md", "LICENSE"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "tsc -p tsconfig.json --watch",
+    "prepublishOnly": "npm run build",
+    "test": "npm run build && node --test test/*.test.mjs"
+  },
+  "keywords": ["mcp", "model-context-protocol", "identity-verification", "kyc", "verifa", "sanctions", "liveness"],
+  "repository": { "type": "git", "url": "https://github.com/withverifa/verifa-mcp-server" },
+  "homepage": "https://withverifa.com",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.6.0"
+  }
+}

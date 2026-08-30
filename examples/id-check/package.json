@@ -1,0 +1,15 @@
+{
+  "name": "verifa-id-check-example",
+  "private": true,
+  "type": "module",
+  "description": "Run a Verifa identity verification end to end in sandbox — REST and MCP agent side by side.",
+  "scripts": {
+    "start": "node index.mjs",
+    "review": "node index.mjs --outcome=require-review",
+    "decline": "node index.mjs --outcome=decline",
+    "webhooks": "node index.mjs --webhooks"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0"
+  }
+}
