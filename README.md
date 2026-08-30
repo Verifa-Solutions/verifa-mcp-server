@@ -81,7 +81,7 @@ VERIFA_API_KEY=vk_sandbox_... npx -y @withverifa/mcp-server --check
 ## Try it in five minutes
 
 ```sh
-git clone https://github.com/withverifa/verifa-mcp-server
+git clone https://github.com/Verifa-Solutions/verifa-mcp-server
 cd verifa-mcp-server/examples/id-check
 npm install
 cp .env.example .env        # paste your sandbox key
