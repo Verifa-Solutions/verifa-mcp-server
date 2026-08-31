@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.verifa-solutions/verifa",
+  "name": "io.github.Verifa-Solutions/verifa",
   "title": "Verifa",
   "description": "Identity verification, document checks, sanctions/PEP screening and case review as agent tools.",
   "repository": {
