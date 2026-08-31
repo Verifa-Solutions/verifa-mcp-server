@@ -9,7 +9,7 @@ read results, and work the review queue, all as tools an agent can call.
   "mcpServers": {
     "verifa": {
       "command": "npx",
-      "args": ["-y", "@withverifa/mcp-server"],
+      "args": ["-y", "@verifasolutionsinc/mcp-server"],
       "env": { "VERIFA_API_KEY": "vk_sandbox_...", "VERIFA_ENV": "sandbox" }
     }
   }
@@ -75,7 +75,7 @@ Fewer tools means less context spent per request and better tool selection. Pick
 Check what a given configuration exposes without opening a client:
 
 ```sh
-VERIFA_API_KEY=vk_sandbox_... npx -y @withverifa/mcp-server --check
+VERIFA_API_KEY=vk_sandbox_... npx -y @verifasolutionsinc/mcp-server --check
 ```
 
 ## Try it in five minutes

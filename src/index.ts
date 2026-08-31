@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * @withverifa/mcp-server — local stdio MCP server for Verifa.
+ * @verifasolutionsinc/mcp-server — local stdio MCP server for Verifa.
  *
  * It does not reimplement any tools. It opens one authenticated connection to
  * the hosted Verifa MCP endpoint (streamable HTTP, Bearer = your API key) and
@@ -11,7 +11,7 @@
  *
  * Usage (Claude Desktop / Cursor / any stdio MCP client):
  *   { "mcpServers": { "verifa": {
- *       "command": "npx", "args": ["-y", "@withverifa/mcp-server"],
+ *       "command": "npx", "args": ["-y", "@verifasolutionsinc/mcp-server"],
  *       "env": { "VERIFA_API_KEY": "vk_sandbox_...", "VERIFA_ENV": "sandbox" } } } }
  */
 
@@ -64,7 +64,7 @@ async function main(): Promise<void> {
     return;
   }
   if (argv.includes("--help") || argv.includes("-h")) {
-    console.log(`@withverifa/mcp-server ${version}
+    console.log(`@verifasolutionsinc/mcp-server ${version}
 
 Local stdio MCP server for Verifa identity verification.
 

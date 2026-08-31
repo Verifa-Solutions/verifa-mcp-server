@@ -5,7 +5,7 @@
  *
  *   REST   create session → one-time link + QR → simulate outcome → read result
  *   AGENT  the identical steps, executed by an MCP client through
- *          @withverifa/mcp-server — what an AI agent sees and calls
+ *          @verifasolutionsinc/mcp-server — what an AI agent sees and calls
  *
  * Usage:
  *   node index.mjs                      # approve, REST + agent side by side
@@ -141,7 +141,7 @@ async function agentFlow() {
   const { Client } = await import("@modelcontextprotocol/sdk/client/index.js");
   const { StdioClientTransport } = await import("@modelcontextprotocol/sdk/client/stdio.js");
 
-  const serverCmd = (process.env.VERIFA_MCP_SERVER_CMD ?? "npx -y @withverifa/mcp-server").split(/\s+/);
+  const serverCmd = (process.env.VERIFA_MCP_SERVER_CMD ?? "npx -y @verifasolutionsinc/mcp-server").split(/\s+/);
   const mcp = new Client({ name: "id-check-demo", version: "0.1.0" });
   await mcp.connect(
     new StdioClientTransport({
