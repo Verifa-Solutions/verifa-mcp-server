@@ -8,11 +8,34 @@
     "source": "github"
   },
   "websiteUrl": "https://withverifa.com",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "remotes": [
     {
       "type": "streamable-http",
       "url": "https://api.withverifa.com/mcp"
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@verifasolutionsinc/mcp-server",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "VERIFA_API_KEY",
+          "description": "Verifa API key (vk_sandbox_... or vk_live_...)",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "VERIFA_ENV",
+          "description": "sandbox or live (inferred from the key if omitted)",
+          "isRequired": false
+        }
+      ]
     }
   ]
 }
